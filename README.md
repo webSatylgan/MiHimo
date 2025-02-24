@@ -1,1 +1,1 @@
-simple vute-vite landing page template for fast start
+Mihimo landing page written with vue.js
