@@ -5,7 +5,9 @@
 /* styles ----------------- */
 
 /* blocks */
-body {}
+body {
+    font-family: var(--font-family);
+}
 
 nav {
     display: flex;
@@ -16,34 +18,51 @@ nav {
 
 /* tags styles -------------- */
 h1, h2 {
-    font-family: var(--font-main);
-    font-weight: 400;
-    font-size: 80px;
-    color: var(--primary);
+    font-weight: 700;
+    color: var(--black);
 }
 
 h1 {
-    color: var(--secondary);
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--gray);
+}
+
+a, p {
+    font-weight: 400;
+    font-size: .8rem;
+    color: var(--black);
+}
+
+a {
+    text-transform: uppercase;
 }
 
 p {
-    font-family: var(--font-secondary);
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 157%;
-    color: var(--secondary);
+    line-height: 120%;
 }
 
-a, button {
-    font-family: var(--font-secondary);
+button {
+    padding: 28px 81px;
+
     font-weight: 400;
-    font-size: 20px;
-    line-height: 180%;
-    color: var(--secondary);
+    font-size: 1.25rem;
+    letter-spacing: 1.1em;
+    text-transform: uppercase;
+    color: var(--white);
+
     transition: .2s;
 }
 
-a {}
 
 /* container classes ----------- */
 .container {
