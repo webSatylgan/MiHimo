@@ -54,6 +54,8 @@ p {
 button {
     padding: 28px 81px;
 
+    background: var(--black);
+
     font-weight: 400;
     font-size: 1.25rem;
     letter-spacing: 1.1em;
@@ -66,7 +68,7 @@ button {
 
 /* container classes ----------- */
 .container {
-    max-width: 1760px;
+    max-width: 1240px;
     width: 100%;
 
     padding: 0 20px;
