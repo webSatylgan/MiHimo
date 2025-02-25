@@ -18,6 +18,10 @@
         width: 100%;
     }
 
+    .header img {
+        max-width: 160px;
+    }
+
     .header nav {
         max-width: 425px;
         gap: 10px;
