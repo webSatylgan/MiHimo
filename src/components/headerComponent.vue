@@ -3,15 +3,13 @@
 </script>
 
 <template>
-    <div class="container">
-        <div class="header flex">
-            <img src="@assets/imgs/logo.svg" alt="">
-            <nav>
-                <a href="">Описание</a>
-                <a href="">Характеристики</a>
-                <button>стоимость</button>
-            </nav>
-        </div>
+    <div class="header flex">
+        <img src="@assets/imgs/logo.svg" alt="">
+        <nav>
+            <a href="">Описание</a>
+            <a href="">Характеристики</a>
+            <button>стоимость</button>
+        </nav>
     </div>
 </template>
 
