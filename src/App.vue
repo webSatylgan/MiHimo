@@ -4,6 +4,7 @@ import HeaderComponent from "./components/headerComponent.vue";
 import IntroComponent from "./components/introComponent.vue";
 import FooterComponent from "./components/footerComponent.vue";
 import DescriptionComponent from "@components/descriptionComponent.vue";
+import FeatureComponent from "@components/featureComponent.vue";
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import DescriptionComponent from "@components/descriptionComponent.vue";
         <HeaderComponent />
         <IntroComponent />
         <DescriptionComponent />
+        <feature-component />
     </div>
 
 
