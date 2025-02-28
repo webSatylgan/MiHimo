@@ -4,7 +4,11 @@
 
     // prop binding ------------------
     const props = defineProps({
-       slides: Array
+        slides: Array,
+        dots: {
+            type: Boolean,
+            default: false
+        }
     });
 
     // imgs path ----------------------
@@ -48,7 +52,7 @@
             </div>
         </div> <!-- slider container -->
 
-        <div class="slider__dots">
+        <div class="slider__dots" v-if="dots">
             <span
                 v-for="(_, index) in slides.length"
                 class="slider__dot"
