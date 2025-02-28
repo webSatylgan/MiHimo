@@ -6,6 +6,7 @@ import FooterComponent from "./components/footerComponent.vue";
 import DescriptionComponent from "@components/descriptionComponent.vue";
 import FeatureComponent from "@components/featureComponent.vue";
 import BuyComponent from "@components/buyComponent.vue";
+import SliderComponent from "@components/sliderComponent.vue";
 </script>
 
 <template>
@@ -13,7 +14,8 @@ import BuyComponent from "@components/buyComponent.vue";
         <HeaderComponent />
         <IntroComponent />
         <DescriptionComponent />
-        <feature-component />
+        <featureComponent />
+        <sliderComponent />
         <buy-component />
     </div>
 
