@@ -18,8 +18,6 @@ import SliderComponent from "@components/sliderComponent.vue";
         <sliderComponent />
         <buy-component />
     </div>
-
-
     <footer-component />
 </template>
 

@@ -1,5 +1,7 @@
 <script setup>
+    import SliderUi from "@components/ui/sliderUi.vue";
 
+    const slides = ["intro-1.png", "intro-2.png", "intro-3.png", "intro-4.png", "intro-5.png"];
 </script>
 
 <template>
@@ -11,7 +13,9 @@
             <button>ЗАКАЗАТЬ</button>
         </div>
         <div class="intro__properties">
-            <img src="@assets/imgs/intro.png" alt="">
+            <div class="intro__slider">
+                <sliderUi :slides="slides" :dots="true" />
+            </div>
             <div class="intro-properties__info flex">
                 <div>
                     <p>до 100 км</p>
@@ -77,6 +81,11 @@
 
         font-size: 12px;
         text-transform: lowercase;
+    }
+
+    .intro__slider > div {
+        flex-direction: row;
+
     }
 
 </style>
