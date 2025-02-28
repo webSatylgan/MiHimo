@@ -71,6 +71,12 @@ img {
     object-fit: cover;
 }
 
+input[type="text"] {
+    width: 100%;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--black);
+}
+
 /* container classes ----------- */
 .container {
     max-width: 1240px;
