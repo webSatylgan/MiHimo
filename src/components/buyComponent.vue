@@ -142,4 +142,11 @@
         transform: translate(-50%, -50%);
     }
 
+    /* media -------------- */
+    @media (max-width: 850px) {
+        .buy {
+            flex-direction: column-reverse;
+        }
+    }
+
 </style>

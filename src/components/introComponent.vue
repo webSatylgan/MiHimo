@@ -88,4 +88,45 @@
 
     }
 
+    /* media ---------- */
+    @media (max-width: 1024px) {
+
+        .intro__content button, .intro__content p {
+            margin-top: 40px;
+        }
+
+        .intro__properties {
+            max-width: 450px;
+        }
+
+    }
+    
+    @media (max-width: 850px) {
+        .intro {
+            flex-direction: column-reverse;
+        }
+
+        .intro__content {
+            margin-top: 40px;
+            max-width: 620px;
+            align-self: auto;
+
+            text-align: center;
+        }
+
+        .intro__content p {
+            max-width: 100%;
+        }
+
+        .intro__properties {
+            max-width: 620px;
+        }
+    }
+    
+    @media (max-width: 520px) {
+        .intro-properties__info {
+            max-width: 380px;
+        }
+    }
+    
 </style>

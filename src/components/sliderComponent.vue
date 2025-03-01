@@ -7,7 +7,7 @@
 
 <template>
     <div class="bikes">
-        <sliderUi :slides="slideList" />
+        <sliderUi :slides="slideList" :dots="true" />
     </div>
 </template>
 

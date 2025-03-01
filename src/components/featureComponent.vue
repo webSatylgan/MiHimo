@@ -138,4 +138,15 @@
         margin-top: 10px;
     }
 
+    /* media -------------------- */
+    @media (max-width: 850px) {
+        .feature h2 {
+            text-align: center;
+        }
+
+        .feature__container {
+            flex-direction: column-reverse;
+        }
+    }
+
 </style>

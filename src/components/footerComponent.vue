@@ -80,5 +80,13 @@
         max-width: 25px;
         height: 25px;
     }
-
+    
+    /* media ----------------- */
+    @media (max-width: 520px) {
+        .footer__container {
+            flex-direction: column-reverse;
+            gap: 30px;
+        }
+    }
+    
 </style>

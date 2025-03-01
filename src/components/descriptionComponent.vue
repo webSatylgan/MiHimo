@@ -60,4 +60,34 @@
     .description__item p {
         margin-top: 10px;
     }
+
+    /* media ---------------- */
+    @media (max-width: 1024px) {
+        .description img {
+            max-width: 450px;
+        }
+
+        .description__item {
+            margin-top: 20px;
+        }
+    }
+    
+    @media (max-width: 850px) {
+        .description {
+            flex-direction: column;
+        }
+
+        .description__container {
+            margin-top: 30px;
+        }
+    }
+    
+    @media (max-width: 520px) {
+
+        .description {
+            max-width: 400px;
+            margin: 50px auto 0;
+        }
+
+    }
 </style>
