@@ -1,6 +1,9 @@
 <script setup>
+    // imports -----------------
     import {inject, watch} from "vue";
 
+    // burger logic -----------
+    // inject isBurgerOpen from App.vue
     const isBurgerOpen = inject("isBurgerOpen");
 
     watch(isBurgerOpen, (newValue) => {
@@ -11,7 +14,6 @@
             document.body.style.overflow = "";
         }
     });
-
 </script>
 
 <template>
@@ -20,7 +22,7 @@
         <a href="">Описание</a>
         <a href="">Характеристики</a>
         <button>стоимость</button>
-    </div>
+    </div> <!-- menu -->
 </template>
 
 <style scoped>
@@ -57,6 +59,4 @@
         left: 0;
         opacity: 1;
     }
-
-
 </style>

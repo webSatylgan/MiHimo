@@ -14,6 +14,8 @@ export default defineConfig({
       {find: '@components', replacement: fileURLToPath(new URL('./src/components', import.meta.url))},
       // for "assets"
       {find: '@assets', replacement: fileURLToPath(new URL('./src/assets', import.meta.url))},
+      // for "scripts"
+      {find: '@scripts', replacement: fileURLToPath(new URL('./src/scripts', import.meta.url))}
     ]
   }
 })

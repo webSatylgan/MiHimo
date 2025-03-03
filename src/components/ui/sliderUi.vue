@@ -1,8 +1,9 @@
 <script setup>
     // imports -----------------
     import {computed, onMounted, onUnmounted, ref} from "vue";
+    import {imgsPath} from "@scripts/imgsPath.js";
 
-    // prop binding ------------------
+    // props binding ------------------
     const props = defineProps({
         slides: Array,
         dots: {
@@ -11,11 +12,8 @@
         }
     });
 
-    // imgs path ----------------------
-    const imgsPaths = import.meta.glob("@/assets/imgs/*", {eager: true});
-    const slidePathes = computed(() =>
-        props.slides.map(filePath => imgsPaths[`/src/assets/imgs/${filePath}`]?.default || "")
-    );
+    // imgs paths ----------------------
+    const slidePathes = imgsPath(props.slides);
 
     // slider logic ---------------------
     let currentIndex = ref(0);
@@ -103,6 +101,8 @@
 
         background: var(--black);
         border-radius: 7px;
+
+        cursor: pointer;
 
         transition: .3s;
     }

@@ -1,5 +1,4 @@
 <script setup>
-
 </script>
 
 <template>
@@ -31,9 +30,9 @@
                     </svg>
                     <p>elektrobikeukr@gmail.com</p>
                 </div>
-            </div>
-        </div>
-    </div>
+            </div> <!-- footer__container -->
+        </div> <!-- container -->
+    </div> <!-- footer -->
 </template>
 
 <style scoped>
@@ -82,6 +81,7 @@
     }
     
     /* media ----------------- */
+    /* <= 520px */
     @media (max-width: 520px) {
         .footer__container {
             flex-direction: column-reverse;

@@ -5,6 +5,10 @@
 /* styles ----------------- */
 
 /* blocks */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-family);
 }
@@ -55,14 +59,22 @@ button {
     padding: 28px 81px;
 
     background: var(--black);
+    border: 1px solid var(--black);
 
     font-weight: 400;
     font-size: 1.25rem;
     letter-spacing: 1.1em;
     text-transform: uppercase;
     color: var(--white);
+    cursor: pointer;
 
-    transition: .2s;
+    transition: .2s ease-in-out;
+}
+
+/* button animation */
+button:hover {
+    background: var(--white);
+    color: var(--black);
 }
 
 img {
@@ -96,6 +108,7 @@ input[type="text"] {
 }
 
 /* media-adaptive ------------ */
+/* <= 1024px */
 @media (max-width: 1024px) {
     html {
         font-size: 15px;
@@ -111,12 +124,14 @@ input[type="text"] {
     }
 }
 
+/* <= 520px */
 @media (max-width: 520px) {
     html {
         font-size: 14px;
     }
 }
 
+/* <= 420px */
 @media (max-width: 420px) {
     button {
         padding: 18px 30px;

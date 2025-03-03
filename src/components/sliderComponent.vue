@@ -1,14 +1,16 @@
 <script setup>
-    import {ref} from "vue";
+    // imports ------------------
+    // import sliderUI
     import SliderUi from "@components/ui/sliderUi.vue";
 
-    const slideList = ref(["slider-1.png", "slider-2.png", "slider-3.png"]);
+    // slides
+    const slideList = ["slider-1.png", "slider-2.png", "slider-3.png"];
 </script>
 
 <template>
     <div class="bikes">
         <sliderUi :slides="slideList" :dots="true" />
-    </div>
+    </div> <!-- bikes -->
 </template>
 
 <style scoped>

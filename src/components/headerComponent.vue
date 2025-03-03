@@ -1,6 +1,8 @@
 <script setup>
+    // imports -----------------
     import {inject} from "vue";
 
+    // inject from App.vue --------------
     const isBurgerOpen = inject("isBurgerOpen");
     const toggleBurger = inject("toggleBurger");
 </script>
@@ -9,16 +11,16 @@
     <div class="header flex">
         <img src="@assets/imgs/logo.svg" alt="">
         <nav>
-            <a href="">Описание</a>
-            <a href="">Характеристики</a>
-            <button>стоимость</button>
+            <a href="#description">Описание</a>
+            <a href="#feature">Характеристики</a>
+            <a href="#buy"><button>стоимость</button></a>
         </nav>
         <div class="header__burger" :class="{active: isBurgerOpen}" @click="toggleBurger">
             <span></span>
             <span></span>
             <span></span>
-        </div>
-    </div>
+        </div> <!-- header__burger -->
+    </div> <!-- header -->
 </template>
 
 <style scoped>
@@ -33,6 +35,34 @@
     .header nav {
         max-width: 425px;
         gap: 10px;
+    }
+
+    .header nav a {
+        position: relative;
+    }
+
+    .header nav a::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+
+        background: var(--black);
+
+        transition: .2s ease-in-out;
+    }
+
+    .header nav a:last-child::after {
+        content: none;
+    }
+
+    /* header links animation */
+    .header nav a:hover::after {
+        width: 100%;
     }
 
     .header nav button {
@@ -73,6 +103,7 @@
     }
 
     /* media -------------- */
+    /* <= 768px */
     @media (max-width: 768px) {
         .header img {
             max-width: 100px;
@@ -86,5 +117,4 @@
             display: flex;
         }
     }
-
 </style>

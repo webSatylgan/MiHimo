@@ -1,7 +1,9 @@
 <script setup>
     // imports components -------
+    // vue imports
     import {onMounted, onUnmounted, ref, watchEffect, provide} from "vue";
 
+    // component imports
     import HeaderComponent from "./components/headerComponent.vue";
     import IntroComponent from "./components/introComponent.vue";
     import FooterComponent from "./components/footerComponent.vue";
@@ -36,6 +38,7 @@
         isBurgerOpen.value = !isBurgerOpen.value;
     }
 
+    // reactive datas for components
     provide("isBurgerOpen", isBurgerOpen);
     provide("toggleBurger", toggleBurger);
 
@@ -49,12 +52,11 @@
         <featureComponent />
         <sliderComponent />
         <buy-component />
-    </div>
+    </div> <!-- container -->
     <footer-component />
 
     <menuComponent v-if="isMobile" />
 </template>
 
 <style scoped>
-
 </style>

@@ -1,9 +1,8 @@
 <script setup>
-
 </script>
 
 <template>
-    <div class="description flex">
+    <div class="description flex" id="description">
         <img src="@assets/imgs/description.png" alt="">
         <div class="description__container">
             <div class="description__item">
@@ -31,8 +30,8 @@
                 <h2>Удобное седло</h2>
                 <p>Электровелосипед HIMO C26 укомплектован велосипедным седлом от известного бренда Selle Royal. Трехмерная гелевая структура седла обеспечивает оптимальную упругость и высокий комфорт во время езды.</p>
             </div>
-        </div>
-    </div>
+        </div> <!-- description__container -->
+    </div> <!-- description -->
 </template>
 
 <style scoped>
@@ -62,6 +61,7 @@
     }
 
     /* media ---------------- */
+    /* <= 1024px */
     @media (max-width: 1024px) {
         .description img {
             max-width: 450px;
@@ -71,7 +71,8 @@
             margin-top: 20px;
         }
     }
-    
+
+    /* <= 850px */
     @media (max-width: 850px) {
         .description {
             flex-direction: column;
@@ -81,7 +82,8 @@
             margin-top: 30px;
         }
     }
-    
+
+    /* <= 520px */
     @media (max-width: 520px) {
 
         .description {

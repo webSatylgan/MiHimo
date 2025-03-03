@@ -1,94 +1,93 @@
 <script setup>
-
 </script>
 
 <template>
-<div class="feature">
-    <h2>ХАрактеристики</h2>
-    <div class="feature__container flex">
-        <div class="feature__content">
-            <div class="feature__content-item">
-                <h3>Общие</h3>
-                <dl>
-                    <dt>Производитель</dt>
-                    <dd>Xiaomi</dd>
+    <div class="feature" id="feature">
+        <h2>Характеристики</h2>
+        <div class="feature__container flex">
+            <div class="feature__content">
+                <div class="feature__content-item">
+                    <h3>Общие</h3>
+                    <dl>
+                        <dt>Производитель</dt>
+                        <dd>Xiaomi</dd>
 
-                    <dt>Вид</dt>
-                    <dd>взрослый, дорожный, городской, электровелосипед, алюминиевая рама</dd>
+                        <dt>Вид</dt>
+                        <dd>взрослый, дорожный, городской, электровелосипед, алюминиевая рама</dd>
 
-                    <dt>Колеса</dt>
-                    <dd>26, двойной алюминиевый обод</dd>
+                        <dt>Колеса</dt>
+                        <dd>26, двойной алюминиевый обод</dd>
 
-                    <dt>Электропривод</dt>
-                    <dd>мотор 250W, разгон до 25 км/ч</dd>
-                </dl>
-            </div>
-            <div class="feature__content-item">
-                <h3>амортизация</h3>
-                <dl>
-                    <dt>Тип амортизации</dt>
-                    <dd>амортизирующая вилка (Hard tail)</dd>
+                        <dt>Электропривод</dt>
+                        <dd>мотор 250W, разгон до 25 км/ч</dd>
+                    </dl>
+                </div>
+                <div class="feature__content-item">
+                    <h3>амортизация</h3>
+                    <dl>
+                        <dt>Тип амортизации</dt>
+                        <dd>амортизирующая вилка (Hard tail)</dd>
 
-                    <dt>Вилка</dt>
-                    <dd>пружинно-эластомерная</dd>
-                </dl>
-            </div>
-            <div class="feature__content-item">
-                <h3>управление</h3>
-                <dl>
-                    <dt>Руль</dt>
-                    <dd>изогнутый, регулируемый подъем</dd>
+                        <dt>Вилка</dt>
+                        <dd>пружинно-эластомерная</dd>
+                    </dl>
+                </div>
+                <div class="feature__content-item">
+                    <h3>управление</h3>
+                    <dl>
+                        <dt>Руль</dt>
+                        <dd>изогнутый, регулируемый подъем</dd>
 
-                    <dt>Манетки</dt>
-                    <dd>триггерные однорычажные, Shimano</dd>
-                </dl>
-            </div>
-            <div class="feature__content-item">
-                <h3>характеристика трансмиссии</h3>
-                <dl>
-                    <dt>Количество скоростей</dt>
-                    <dd>7</dd>
+                        <dt>Манетки</dt>
+                        <dd>триггерные однорычажные, Shimano</dd>
+                    </dl>
+                </div>
+                <div class="feature__content-item">
+                    <h3>характеристика трансмиссии</h3>
+                    <dl>
+                        <dt>Количество скоростей</dt>
+                        <dd>7</dd>
 
-                    <dt>Педали</dt>
-                    <dd>классические</dd>
+                        <dt>Педали</dt>
+                        <dd>классические</dd>
 
-                    <dt>Передний переключатель</dt>
-                    <dd>1 звезда</dd>
+                        <dt>Передний переключатель</dt>
+                        <dd>1 звезда</dd>
 
-                    <dt>Задний переключатель</dt>
-                    <dd>Shimano Tourney (прогулочный)</dd>
+                        <dt>Задний переключатель</dt>
+                        <dd>Shimano Tourney (прогулочный)</dd>
 
-                    <dt>Кассета</dt>
-                    <dd>7 звезд</dd>
-                </dl>
-            </div>
-            <div class="feature__content-item">
-                <h3>тормоза</h3>
-                <dl>
-                    <dt>Передний</dt>
-                    <dd>дисковый механический</dd>
+                        <dt>Кассета</dt>
+                        <dd>7 звезд</dd>
+                    </dl>
+                </div>
+                <div class="feature__content-item">
+                    <h3>тормоза</h3>
+                    <dl>
+                        <dt>Передний</dt>
+                        <dd>дисковый механический</dd>
 
-                    <dt>Задний</dt>
-                    <dd>дисковый механический</dd>
+                        <dt>Задний</dt>
+                        <dd>дисковый механический</dd>
 
-                    <dt>Готовность к установке дисковых</dt>
-                    <dd>рама, вилка, втулка </dd>
-                </dl>
-            </div>
-            <div class="feature__content-item">
-                <h3>прочее</h3>
-                <dl>
-                    <dt>Оснащение</dt>
-                    <dd>электрооборудование, звонок</dd>
+                        <dt>Готовность к установке дисковых</dt>
+                        <dd>рама, вилка, втулка </dd>
+                    </dl>
+                </div>
+                <div class="feature__content-item">
+                    <h3>прочее</h3>
+                    <dl>
+                        <dt>Оснащение</dt>
+                        <dd>электрооборудование, звонок</dd>
 
-                    <dt>Вес</dt>
-                    <dd>25 кг</dd>
-                </dl>
-            </div>
-        </div>
-        <img src="@assets/imgs/feature.png" alt="">
-    </div>
-</div>
+                        <dt>Вес</dt>
+                        <dd>25 кг</dd>
+                    </dl>
+                </div>
+            </div> <!-- feature__content -->
+            <img src="@assets/imgs/feature.png" alt="">
+        </div> <!-- feature__component -->
+    </div> <!-- feature -->
 </template>
 
 <style scoped>
@@ -139,6 +138,7 @@
     }
 
     /* media -------------------- */
+    /* <= 850px */
     @media (max-width: 850px) {
         .feature h2 {
             text-align: center;
