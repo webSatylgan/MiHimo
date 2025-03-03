@@ -1,1 +1,0 @@
-Mihimo landing page written with vue.js
