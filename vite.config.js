@@ -4,6 +4,7 @@ import vue from '@vitejs/plugin-vue'
 
 import {fileURLToPath, URL} from 'url'
 export default defineConfig({
+  base: "/MiHimo/",
   plugins: [vue()],
   resolve: {
     alias: [
