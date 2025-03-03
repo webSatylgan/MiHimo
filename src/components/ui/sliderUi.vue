@@ -1,6 +1,6 @@
 <script setup>
     // imports -----------------
-    import {computed, onMounted, onUnmounted, ref} from "vue";
+    import {onMounted, onUnmounted, ref} from "vue";
     import {imgsPath} from "@scripts/imgsPath.js";
 
     // props binding ------------------
@@ -21,7 +21,7 @@
 
     const startAutoSlide = () => {
         interval = setInterval(() => {
-            currentIndex.value = (currentIndex.value + 1) % slidePathes.value.length;
+            currentIndex.value = (currentIndex.value + 1) % slidePathes.length;
         }, 5000);
     }
 
